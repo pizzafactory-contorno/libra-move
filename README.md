@@ -1,2 +1,2 @@
 # libra-move
-Dockerfile for Libra's Move on Eclipse/Che7
+Eclipse/Contorno side dish container that contains the environment for Libra's Move Language.
