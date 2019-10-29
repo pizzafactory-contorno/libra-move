@@ -1,0 +1,18 @@
+# Copyright (C) 2019 PizzaFactory/Contorno
+# Licensed under EPL-2.0.
+apiVersion: 1.0.0
+metadata:
+  name: libra-move
+projects:
+  - name: libra-move
+    source:
+      location: 'https://github.com/libra/libra.git'
+      type: git
+components:
+  - mountSources: true
+    memoryLimit: 2048Mi
+    type: dockerimage
+    alias: dev
+    image: pizzafactory0contorno/libra-move
+  - id: pizzafactory/vscode-libra-move/0.0.10
+    type: chePlugin
