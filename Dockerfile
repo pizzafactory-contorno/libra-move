@@ -1,4 +1,4 @@
-FROM rust:1.37.0-slim-buster 
+FROM rust:1.44.1-slim-buster 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential git pkg-config cmake libssl-dev \
       unzip wget sudo bash-completion && \
